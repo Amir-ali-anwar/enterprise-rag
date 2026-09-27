@@ -13,7 +13,7 @@ load_dotenv()
 
 logfire.configure(send_to_logfire=os.environ.get("LOGFIRE_SEND_TO"), service_name="rag-enterprise")
 
-app = FastAPI(title="Enterprise Agentic RAG API")
+app = FastAPI(title="StackSage API")
 
 
 class QueryRequest(BaseModel):
@@ -23,7 +23,7 @@ class QueryRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Enterprise Agentic RAG API is running"}
+    return {"message": "StackSage API is running"}
 
 
 @app.get("/graph")

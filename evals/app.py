@@ -30,7 +30,7 @@ from evals.store import save_eval_run, list_eval_runs, load_eval_run
 # Page config
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Enterprise RAG — Eval Suite",
+    page_title="StackSage — Eval Suite",
     page_icon="🧪",
     layout="wide",
 )
@@ -104,7 +104,7 @@ golden = st.session_state.golden
 # ─────────────────────────────────────────────────────────────────────────────
 # Header
 # ─────────────────────────────────────────────────────────────────────────────
-st.title("🧪 Enterprise RAG — Evaluation Suite")
+st.title("🧪 StackSage — Evaluation Suite")
 st.caption(
     "Step 1: Review ground truth → Step 2: Run live pipeline → Step 3: Score with RAGAS"
 )

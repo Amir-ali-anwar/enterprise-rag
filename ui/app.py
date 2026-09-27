@@ -98,8 +98,8 @@ except Exception as e:
 
 
 st.set_page_config(
-    page_title="Enterprise RAG",
-    page_icon="🤖",
+    page_title="StackSage",
+    page_icon="🧙",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -121,7 +121,7 @@ if 'messages' not in st.session_state:
 # --- SIDEBAR ---
 
 with st.sidebar:
-    st.title("Enterprise RAG")
+    st.title("StackSage")
     st.markdown("---")
     st.success(f"Logfire: {LOGFIRE_STATUS}")
     st.caption(f"Backend URL: {BACKEND_BASE_URL}")
@@ -133,7 +133,7 @@ with st.sidebar:
         st.rerun() 
 
 # --- MAIN CHAT ---
-st.title("🤖 Enterprise Agentic Assistant")
+st.title("🧙 StackSage — Your Web Dev Assistant")
 
 # Custom CSS styling for premium look & feel
 st.markdown(
@@ -162,7 +162,7 @@ for message in st.session_state.messages:
 
 # Chat Input
 
-if prompt := st.chat_input("Ask a technical question about enterprise documents..."):
+if prompt := st.chat_input("Ask about HTML, CSS, JavaScript, React, Node.js, MongoDB, Docker, or Kubernetes..."):
 
 # START TRACE: User Interaction
     
